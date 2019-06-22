@@ -26,4 +26,4 @@ function myReplace(str, before, after) {
 }
 
 myReplace("Let us get back to more Coding", "Coding", "algorithms");
-//
+// Let us get back to more Algorithms
