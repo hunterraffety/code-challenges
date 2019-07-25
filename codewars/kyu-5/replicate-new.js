@@ -8,3 +8,10 @@ function nouveau(constructorFunc, ...args) {
   }
   return plainObject;
 }
+
+// Number 1 Code Solution on Codewars
+function nouveau(Constructor, ...args) {
+  const instance = Object.create(Constructor.prototype);
+  const result = Constructor.apply(instance, args);
+  return result === Object(result) ? result : instance;
+}
